@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="utf-8">
+  <link rel=”icon” href=“favicon.ico”>
+  <title>音声ガイド・デモアプリ v4</title>
+</head>
+
+<body>
+  
+  <div class="head">
+    <h1>音声ガイド デモアプリ</h1>
+  </div>
+  
+  <div id="wrapper">
+    
+    <div id="container">
+    <!-- ココに標準作業内容が入る-->
+    </div>
+
+    <div id="fixed-area">
+      <textarea id="status" cols="70" rows="1"></textarea>
+      <!-- ココに画像が入る-->
+      <img id="pict" src="imageFile/explain.png">
+      <input type="button" value="認識開始" onclick="OnButtonClick();"/><br />
+      <div class="control">
+        <div class="control1">
+          <img id="back" src="imageFile/back.png">
+          <span class="button" id="play"></span>
+          <img id="next" src="imageFile/nexe.png">
+        </div>
+
+        <div id="speed">1X</div>
+       
+        <img class="control_image" src="imageFile/speaker.png">
+        <input class="control2" type="range" id="volume" min="0" max="10" step="1" value="6"> 
+      
+      </div>
+    </div>
+  </div>
+</body>
+
+<script src="maintenance_list_T鹿児島_HV_検査員.js"></script>
+<script src="audio_file_T鹿児島_HV_検査員.js"></script>
+<script type="text/javascript" src="change_speed.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="audio_guide.js"></script>
+<script type="text/javascript" src="audioControl.js"></script>
+<script type="text/javascript" src="recoginition.js"></script>
+<script type="text/javascript" src="pictControl.js"></script>
+<link rel="stylesheet" href="temple.css">
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+</html>
+
